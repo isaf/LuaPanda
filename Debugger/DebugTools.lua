@@ -287,6 +287,7 @@ function this.createJson()
         startPos = startPos + 1
         -- Infinite loop for array elements
         local index = 1
+        local object
         repeat
             startPos = decode_scanWhitespace(s,startPos)
             assert(startPos<=stringLen,'JSON String ended unexpectedly scanning array.')
